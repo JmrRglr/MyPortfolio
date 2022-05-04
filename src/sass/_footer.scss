@@ -1,0 +1,28 @@
+.footer__wrapper{
+    padding: 0;
+    margin: 0 auto;
+
+    .footer__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background: rebeccapurple;
+        @include respond(tab-port){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+      
+          @include respond(phone){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+    }
+
+    .footer__content{
+        padding: 1rem;
+        color: #fff;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,53 @@
+.main__wrapper{
+    padding: 70px;
+    margin: 60px auto;
+    height: 100vh;
+    width: 100%;   
+    display: flex;
+    align-items: center; 
+    
+
+
+
+    .main__container{
+        // background: hsla(238, 42%, 46%, 0.141);
+        // height: 90%;
+        // width: 100%;
+        // padding: 0;
+        // margin: 0 auto;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        // border-top-left-radius: 120px;
+        // border-bottom-right-radius: 120px;
+        // position: relative;
+        // z-index: 99;
+        @include respond(tab-port){
+            padding: 20px;
+            
+        }
+        @include respond(phone){
+            padding: 5px;
+        }
+        
+    }
+
+    .main__content{
+        font-size: 4rem;
+        color: hsla(240, 78%, 67%, 0.585);  
+        @include respond(tab-port){
+            font-size: 2rem;
+        }
+        @include respond(phone){
+            font-size: 3rem;
+        }  
+        
+        
+    }
+
+    .main__content span{
+        color: #fff;
+        font-size: 200%;
+    }
+}
+
